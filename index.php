@@ -8,7 +8,6 @@ $sec = "2";
     <meta http-equiv="refresh" content="<?php echo $sec?>;URL='<?php echo $page?>'">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Demo Summit Coretech @Yefry Figueroa</title>
-    <link rel="stylesheet" href="css/style.css" id="main-styles-link">
     <style>
         .page
             {position: relative; overflow: hidden; min-height: 100vh; opacity: 0;}
@@ -23,7 +22,7 @@ $sec = "2";
         table {
             font-family: arial, sans-serif;
             border-collapse: collapse;
-            width: 50%;
+            /**width: 80%;*/
             margin-left:auto;margin-right:auto;
         }
 
