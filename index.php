@@ -1,6 +1,6 @@
 <?php
 $page = $_SERVER['PHP_SELF'];
-$sec = "2";
+$sec = "10";
 ?>
 <html>
 <head>
@@ -15,7 +15,7 @@ $sec = "2";
             {text-align: center;}
         .animated
             {animation-duration: 1s; animation-fill-mode: both; opacity: 1;}
-        h1
+        .class-h1
             {font-size: 56px; color: white}
         .font
             {font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;}
@@ -43,13 +43,15 @@ $sec = "2";
         <div class="page animated">
             <header class="page-header">
                 <div class="col-12 font">
-                    <h1>Demo Summit Coretech</h1>
-                    <h2 style="color:white; font-weight: 100">Orario attuale:</h2>
-                        <?php
-                        date_default_timezone_set("Europe/Rome");
-                        date("h:i:sa");
-                        ?>
-                    <h2 style="color:white; font-weight: 100">La pagina si aggiorna automaticamente ogni: 2 secondi</h2>
+                    <h1 class="class-h1">Demo Summit Coretech</h1>
+		    <h2 style="color:white; font-weight: 100">Orario attuale:</h2>
+		    <h1 class="class-h1">
+                <?php
+                date_default_timezone_set("Europe/Rome");
+                echo "" . date("H:i:s");
+			    ?>
+		    </h1>
+                    <h3 style="color:white; font-weight: 100">La pagina si aggiorna automaticamente ogni: 2 secondi</h3>
                     <p style="padding-top: 50px;"></p>
 
 
@@ -76,7 +78,9 @@ $sec = "2";
 
                     </table>
 
-
+		     <?php
+			 phpinfo();
+	         ?>
                 </div>
             </header>
         </div>
