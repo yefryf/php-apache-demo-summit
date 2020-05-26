@@ -51,7 +51,7 @@ $sec = "10";
                 echo "" . date("H:i:s");
 			    ?>
 		    </h1>
-                    <h3 style="color:white; font-weight: 100">La pagina si aggiorna automaticamente ogni: 2 secondi</h3>
+                    <h3 style="color:white; font-weight: 100">La pagina si aggiorna automaticamente ogni: 10 secondi</h3>
                     <p style="padding-top: 50px;"></p>
 
 
